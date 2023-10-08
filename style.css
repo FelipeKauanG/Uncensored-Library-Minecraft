@@ -1,0 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    image-rendering: pixelated;
+}
+.material-symbols-outlined:hover{
+    color: red;
+    cursor: pointer;
+}
+.material-symbols-outlined{
+    color: white;
+}
+header{
+    display: flex;
+    background-color: #1D1D1D;
+    height: 20px;
+    line-height: 20px;
+    align-items: center;
+}
