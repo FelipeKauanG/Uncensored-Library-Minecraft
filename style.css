@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Euclid";
+    src: url(Fonts/Euclid\ Circular\ B\ Medium.ttf);
+}
+@font-face {
+    font-family: "Minecraft";
+    src: url(Fonts/Minecraft.ttf);
+}
+
 *{
     padding: 0px;
     margin: 0px;
@@ -13,7 +22,80 @@
 header{
     display: flex;
     background-color: #1D1D1D;
-    height: 20px;
-    line-height: 20px;
-    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+main{
+    display: flex;
+    background-image: url(imagens/Examples/hero-background-large.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    flex-direction: column;
+    align-content: start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#article1{
+    background-repeat: no-repeat;
+    background: url(GIFs/1.gif);
+    background-size: cover;
+    background-position: center center;
+}
+#article1 article{
+    background-image: url(imagens/Uncensored\ gest\ transparent.png);
+    height: fit-content;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#article1 article p{
+    width: 50%;
+    font-size: 1.3em;
+    font-family: "Euclid";
+    padding: 50px;
+}
+strong{
+    background-color: #E61444;
+    color: white;
+}
+#article2{
+    height: 100vh;
+    background-image: url(GIFs/2.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+#article3{
+    background-image: url(imagens/Background1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+main h1,h2, a {
+    position: relative;
+    display: flex;
+    color: #FFFFFF;
+    width: 25%;
+    left: 10%;
+    font-family: "Euclid";
+}
+a{
+    text-decoration: none;
+    border: 2px solid white;
+    width: fit-content;
+}
+main h1{
+    font-size: 4em;
+}
+::-webkit-scrollbar{
+    display: block;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #E61444;
+    display: block;
+}
+::selection{
+    background-color: #e614458e;
+    background-blend-mode: difference;
 }

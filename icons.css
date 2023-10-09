@@ -1,5 +1,16 @@
-#3bar{
-    height: 10px;
-    width: 10px;
+#bars{
+    height: 55px;
+    width: 55px;
     background-image: url(imagens/Icons/3BAR.png);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#logout{
+    height: 55px;
+    width: 55px;
+    background-image: url(imagens/Icons/Logout.png);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
