@@ -11,13 +11,14 @@
     padding: 0px;
     margin: 0px;
     image-rendering: pixelated;
+    text-rendering: optimizeSpeed;
 }
 .material-symbols-outlined:hover{
     color: red;
     cursor: pointer;
 }
 .material-symbols-outlined{
-    color: white;
+    color : white;
 }
 header{
     display: flex;
@@ -35,6 +36,15 @@ main{
     align-content: start;
     flex-wrap: wrap;
     justify-content: center;
+}
+#legend{
+    overflow: hidden;
+    transform: rotate(-90deg);
+    position: fixed;
+    top: 50vh;
+    left: -100px;
+    font-size: 1.5em;
+    font-family: "minecraft";
 }
 #article1{
     background-repeat: no-repeat;
@@ -57,6 +67,8 @@ main{
 strong{
     background-color: #E61444;
     color: white;
+    pointer-events: none;
+    user-select: none;
 }
 #article2{
     height: 100vh;
@@ -66,20 +78,25 @@ strong{
     background-size: 100% 100%;
 }
 #article3{
-    background-image: url(imagens/Background1.png);
+    padding: 50px;
+    background-image: url(GIFs/2.gif);
     background-size: contain;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     background-position: center center;
 }
-main h1,h2, a {
+main h1,h2, a{
     position: relative;
     display: flex;
-    color: #FFFFFF;
-    width: 25%;
-    left: 10%;
+    color: white;
     font-family: "Euclid";
 }
-a{
+#article3 p{
+    color: white;
+    margin-top: 10px;
+}
+
+main a{
     text-decoration: none;
     border: 2px solid white;
     width: fit-content;

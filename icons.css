@@ -1,4 +1,6 @@
 #bars{
+    transition: .3s ease-in-out;
+    cursor: pointer;
     height: 55px;
     width: 55px;
     background-image: url(imagens/Icons/3BAR.png);
@@ -7,10 +9,18 @@
     background-position: center center;
 }
 #logout{
+    transition: .3s ease-in-out;
     height: 55px;
+    cursor: pointer;
     width: 55px;
     background-image: url(imagens/Icons/Logout.png);
     background-size: 50% 50%;
     background-repeat: no-repeat;
     background-position: center center;
+}
+#bars:hover{
+    background-image: url(imagens/Icons/3BAR_Active.png);
+}
+#logout:hover{
+    background-image: url(imagens/Icons/Logout_Active.png);
 }
