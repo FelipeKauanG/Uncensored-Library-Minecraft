@@ -11,7 +11,7 @@
     padding: 0px;
     margin: 0px;
     image-rendering: pixelated;
-    text-rendering: optimizeSpeed;
+    text-rendering: optimizeLegibility;
 }
 .material-symbols-outlined:hover{
     color: red;
@@ -37,9 +37,23 @@ main{
     flex-wrap: wrap;
     justify-content: center;
 }
+main a{
+    text-decoration: none;
+    border: 2px solid white;
+    width: fit-content;
+}
+main h1{
+    font-size: 4em;
+}
+strong{
+    background-color: #E61444;
+    color: white;
+    pointer-events: none;
+    user-select: none;
+}
 #legend{
     overflow: hidden;
-    transform: rotate(-90deg);
+    rotate: -90deg;
     position: fixed;
     top: 50vh;
     left: -100px;
@@ -64,12 +78,7 @@ main{
     font-family: "Euclid";
     padding: 50px;
 }
-strong{
-    background-color: #E61444;
-    color: white;
-    pointer-events: none;
-    user-select: none;
-}
+
 #article2{
     height: 100vh;
     background-image: url(GIFs/2.gif);
@@ -85,24 +94,72 @@ strong{
     background-size: 100% 100%;
     background-position: center center;
 }
+
 main h1,h2, a{
     position: relative;
     display: flex;
     color: white;
     font-family: "Euclid";
 }
-#article3 p{
+#article3 p, h2{
     color: white;
+    width: 50%;
     margin-top: 10px;
 }
 
-main a{
-    text-decoration: none;
-    border: 2px solid white;
-    width: fit-content;
+#article4{
+    height: fit-content;
+    background-color: #F6F6F6;
+    display: grid;
+    padding: 60px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
-main h1{
-    font-size: 4em;
+#article4 h2{
+    color: black;
+    text-align: start;
+}
+#article4 img{
+    position: relative;
+    width: 200px;
+    left: 50%;
+}
+#article4 img,h2{
+    margin: 25px;
+}
+#article5{
+    display: grid;
+    background-color: black;
+    height: 100vh;
+    color: white;
+    grid-template-columns: 1fr 1fr;
+}
+#article5 img{
+    padding: 100px;
+    transform: translate(-50%);
+    position: relative;
+    width: 500px;
+    left: 50%;
+}
+#article5 div h1{
+    padding: 100px;
+    width: 50%;
+    font-size: 2em;
+}
+#article5 span{
+    font-size: 0.5em;
+    color: white;
+}
+#article6{
+    display: grid;
+    background-image: url(GIFs/1.gif);
+    background-size: contain;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#article6 img{
+    width: 200px;
 }
 ::-webkit-scrollbar{
     display: block;
